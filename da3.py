@@ -15,7 +15,7 @@ def opciones_numeros(disponibles, eliminados, puntos):
         print(disponibles,"disponibles")
         print(eliminados,"eliminados")
         num = int(input("Ingresa el número que deseas eliminar o recuperar: "))
-        if num in disponibles:
+        if num in disponibles and num<=puntos :
             disponibles.remove(num)
             eliminados.append(num)
             puntos -= num
